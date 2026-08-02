@@ -39,6 +39,8 @@ void setup()
 
 void draw()                                             //Within this draw I have created a switch that will change the game screen depending on player actions.
 {
+  translate(width/2, height/2);
+  
   switch(currentScreen)
   {
   case 1:

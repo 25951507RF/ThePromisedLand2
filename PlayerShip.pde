@@ -16,6 +16,7 @@ class PlayerShip
     this.x = x;
     this.y = y;
   }
+  
   //Drawing Player
   void render()
   {
@@ -33,5 +34,10 @@ class PlayerShip
     void display()
     {
       render();
+    }
+    
+    void PlayerShield()
+    {
+      
     }
 }

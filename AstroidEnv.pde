@@ -30,21 +30,11 @@ AstroidEnv(float x, float y)
     speedAst = 0.5 / massAst;
     
     // Random direction
-    float a = random(TWO_PI);
-    dx = sin(a);
-    dy = cos(a);
-    
-    rotationSpeed = random(0.005, 0.02);
 }
 
  void animate() // Need to fix this shit, currently broken.
  {
    // Movement
-   x += dx * speedAst;
-   y += dy * speedAst;
-   
-   // Rotation
-   angle += rotationSpeed;
 
  }
  
@@ -57,6 +47,7 @@ AstroidEnv(float x, float y)
    noStroke();
    fill(colorAst,colorAst,colorAst);
    circle(x, y, sizeAst);
+   
    
    popMatrix();
  }

@@ -16,11 +16,13 @@ void drawGameScreen()
     stars[i].update();
     stars[i].show();
   }
+  translate(-width/2, -height/2);
   for (AstroidEnv a : astroids) 
   {
     a.animate();
     a.render();
   }
  }
+ translate(width/2, height/2); 
    player.render();
 }

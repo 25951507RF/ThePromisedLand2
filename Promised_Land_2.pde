@@ -9,7 +9,6 @@ float speed;
 PFont font;
 
 // Class and Array/Entity Calls
-ArrayList<AstroidEnv> astroids = new ArrayList<AstroidEnv>();
 PlayerShip player;
 
 // Bytes | Game Screens
@@ -23,7 +22,7 @@ void setup()
   size(800,800);
 
   // Draw Player
-  player = new PlayerShip(0,0);
+  player = new PlayerShip(400,400);
 }
 
 void draw()                                             //Within this draw I have created a switch that will change the game screen depending on player actions.

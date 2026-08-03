@@ -8,6 +8,6 @@
 
 void drawGameScreen()
 {
-  translate(width/2, height/2);
-   player.render();
+  background(0);
+  player.render();
 }

@@ -8,7 +8,6 @@ class AstroidEnv
  float dy;
  
  float speedAst;
- float massAst;
  float sizeAst;
  float colorAst;
  
@@ -24,12 +23,10 @@ AstroidEnv(float x, float y)
     this.y = y;
     
     // Mass is depends on the sizeAst.
-    massAst = sizeAst * 0.5;
+    angle = random(15, 45);
     
-    // Speed depends on mass. (Greater Mass = Slower Speed)
-    speedAst = 0.5 / massAst;
     
-    // Random direction
+    
 }
 
  void animate() // Need to fix this shit, currently broken.
@@ -42,12 +39,10 @@ AstroidEnv(float x, float y)
  {
    pushMatrix();
    translate(x, y);
-   rotate(angle);
    
    noStroke();
    fill(colorAst,colorAst,colorAst);
-   circle(x, y, sizeAst);
-   
+   square(x, y, sizeAst);
    
    popMatrix();
  }

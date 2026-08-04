@@ -43,6 +43,9 @@ AstroidEnv(float x, float y)
    noStroke();
    fill(colorAst,colorAst,colorAst);
    square(x, y, sizeAst);
+   rectMode(CENTER);
+   rotate(angle);
+   square(x, y, sizeAst);
    
    popMatrix();
  }
